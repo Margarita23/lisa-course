@@ -1,0 +1,160 @@
+.tiktok {
+    width: 13px;
+    height: 15px;
+}
+
+.section-heading {
+    h1 {
+        color: rgb(210, 179, 86);
+        text-shadow: 1px 1px 0px #000000, 0px -1px 1px white;
+    }
+}
+
+#banner h1 {
+    color: #d2b356;
+}
+
+#banner h2 {
+    color: #9c9c9c;
+    font-weight: 500;
+}
+
+.custom-row {
+    display: flex;
+    align-items: center;
+}
+
+.cusom-col {
+    height: 100%;
+}
+
+.galery-gif {
+    min-width: 177px;
+    padding: 10px 0;
+}
+
+.invoice-details--first {
+    position: relative;
+}
+
+.invoice-details--first .form__cover{
+    position: absolute;
+    display: inline-block;
+    top: 0;
+}
+
+.invoice-details {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.invoice-details[open] .form__cover {
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+.invoice-details.closing .form__cover {
+    animation: fadeOut 0.3s ease-in-out;
+}
+
+.book-seat {
+    cursor: pointer;
+    position: relative;
+}
+
+.book-seat:after {
+    position: absolute;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    content: ' ';
+    background: url("/assets/icons/hand-pointer.svg") no-repeat;
+    background-size: cover;
+    right: -15px;
+    bottom: -20px;
+
+    animation: pulse 1.5s 10s ease-in-out;
+}
+
+.form__cover {
+    padding: 15px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 320px;
+    margin: 0 auto;
+}
+
+.form__cover form input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.form__cover form .button {
+    width: 100%;
+    padding: 10px;
+    background-color: #d2b356;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.form__cover form .button:hover {
+    background-color: #b99e48;
+}
+
+
+@media screen and (max-width: 768px) {
+    #banner h2 {
+        max-width: 300px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #banner h1 {
+        font-size: 40px;
+        line-height: 40px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    #banner h1 {
+        font-size: 30px;
+        line-height: 30px;
+    }
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    to {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+}

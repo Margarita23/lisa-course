@@ -1,0 +1,124 @@
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "version": 1,
+  "newProjectRoot": "projects",
+  "projects": {
+    "lisa-course": {
+      "projectType": "application",
+      "schematics": {},
+      "root": "",
+      "sourceRoot": "src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/lisa-course",
+            "index": "src/index.html",
+            "main": "src/main.ts",
+            "polyfills": [
+              "zone.js"
+            ],
+            "tsConfig": "tsconfig.app.json",
+            "assets": [
+              "src/favicon.ico",
+              "src/assets"
+            ],
+            "styles": [
+              "src/styles.css"
+            ],
+            "scripts": [
+              "src/js/jquery.1.8.3.min.js",
+              "src/js/jquery.easing.min.js",
+              "src/js/jquery.enllax.min.js",
+              "src/js/jquery.scrollUp.min.js",
+              "src/js/jquery.stickyNavbar.min.js",
+              "src/js/jquery.waypoints.min.js",
+              "src/js/featherlight.gallery.min.js",
+              "src/js/featherlight.min.js",
+              "src/js/images-loaded.min.js",
+              "src/js/lightbox.min.js",
+              "src/js/site.js",
+              "src/js/wow.min.js"
+            ]
+          },
+          "configurations": {
+            "production": {
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "500kb",
+                  "maximumError": "1mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "2kb",
+                  "maximumError": "4kb"
+                }
+              ],
+              "outputHashing": "all"
+            },
+            "development": {
+              "buildOptimizer": false,
+              "optimization": false,
+              "vendorChunk": true,
+              "extractLicenses": false,
+              "sourceMap": true,
+              "namedChunks": true
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "configurations": {
+            "production": {
+              "browserTarget": "lisa-course:build:production"
+            },
+            "development": {
+              "browserTarget": "lisa-course:build:development"
+            }
+          },
+          "defaultConfiguration": "development"
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "browserTarget": "lisa-course:build"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ],
+            "tsConfig": "tsconfig.spec.json",
+            "assets": [
+              "src/favicon.ico",
+              "src/assets"
+            ],
+            "styles": [
+              "src/styles.css"
+            ],
+            "scripts": [
+              "src/js/jquery.1.8.3.min.js",
+              "src/js/jquery.easing.min.js",
+              "src/js/jquery.enllax.min.js",
+              "src/js/jquery.scrollUp.min.js",
+              "src/js/jquery.stickyNavbar.min.js",
+              "src/js/jquery.waypoints.min.js",
+              "src/js/featherlight.gallery.min.js",
+              "src/js/featherlight.min.js",
+              "src/js/images-loaded.min.js",
+              "src/js/lightbox.min.js",
+              "src/js/site.js",
+              "src/js/wow.min.js"
+            ]
+          }
+        }
+      }
+    }
+  }
+}
