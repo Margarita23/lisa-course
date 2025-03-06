@@ -3,11 +3,9 @@
     height: 15px;
 }
 
-.section-heading {
-    h1 {
-        color: rgb(210, 179, 86);
-        text-shadow: 1px 1px 0px #000000, 0px -1px 1px white;
-    }
+.section-heading h1 {
+    color: rgb(210, 179, 86);
+    text-shadow: 1px 1px 0px #000000, 0px -1px 1px white;
 }
 
 #banner h1 {
