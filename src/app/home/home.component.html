@@ -105,7 +105,7 @@
 					<summary class="button">Забронювати місце</summary>
 
 					<div class="form__cover1">
-						<form [formGroup]="orderFormMain" (ngSubmit)="submitForm()">
+						<form [formGroup]="orderFormMain" (ngSubmit)="submitFormMain()">
 							<input
 								type="text"
 								formControlName="name"
@@ -119,9 +119,7 @@
 							<input
 								type="tel"
 								formControlName="phone"
-								prefix="+38 "
-								mask="+00 (000) 0000 000"
-								placeholder="+38 (***) **** ***"
+								placeholder="Ваш номер телефону"
 								[ngClass]="{'invalid': orderFormMain.get('phone')?.invalid && orderFormMain.get('phone')?.touched}"
 							>
 							<div *ngIf="orderFormMain.get('phone')?.invalid && orderFormMain.get('phone')?.touched" class="error">
@@ -387,7 +385,7 @@
 						<details class="invoice-details">
 							<summary class="button book-seat">Забронювати місце</summary>
 							<div class="form__cover">
-								<form [formGroup]="orderForm" (ngSubmit)="submitFormMain()">
+								<form [formGroup]="orderForm" (ngSubmit)="submitForm()">
 									<input
 										type="text"
 										formControlName="name"
@@ -401,9 +399,7 @@
 									<input
 										type="tel"
 										formControlName="phone"
-										prefix="+38 "
-										mask="+00 (000) 0000 000"
-										placeholder="+38 (***) **** ***"
+										placeholder="Ваш номер телефону"
 										[ngClass]="{'invalid': orderForm.get('phone')?.invalid && orderForm.get('phone')?.touched}"
 									>
 									<div *ngIf="orderForm.get('phone')?.invalid && orderForm.get('phone')?.touched" class="error">

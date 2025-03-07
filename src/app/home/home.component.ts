@@ -14,14 +14,12 @@ export class HomeComponent {
   constructor(private fb: FormBuilder, private telegramService: TelegramService) {
     this.orderForm = this.fb.group({
       name: ['', Validators.required],
-      phone: ['', [Validators.required, Validators.pattern(/^\+?\d{10,15}$/)]],
-      message: ['']
+      phone: ['', [Validators.required, Validators.pattern(/^\+?\d{10,15}$/)]]
     });
 
     this.orderFormMain = this.fb.group({
       name: ['', Validators.required],
-      phone: ['', [Validators.required, Validators.pattern(/^\+?\d{10,15}$/)]],
-      message: ['']
+      phone: ['', [Validators.required, Validators.pattern(/^\+?\d{10,15}$/)]]
     });
   }
 
@@ -31,8 +29,8 @@ export class HomeComponent {
       return;
     }
 
-    const { name, phone, message } = this.orderFormMain.value;
-    const text = `📌 Нове замовлення:\n👤 Ім'я: ${name}\n📞 Телефон: ${phone}\n📩 Повідомлення: ${message}`;
+    const { name, phone } = this.orderFormMain.value;
+    const text = `📌 Нове замовлення:\n👤 Ім'я: ${name}\n📞 Телефон: ${phone}\n📩`;
 
     this.telegramService.sendMessage(text).subscribe(response => {
       console.log('Message sent:', response);
@@ -46,8 +44,8 @@ export class HomeComponent {
       return;
     }
 
-    const { name, phone, message } = this.orderForm.value;
-    const text = `📌 Нове замовлення:\n👤 Ім'я: ${name}\n📞 Телефон: ${phone}\n📩 Повідомлення: ${message}`;
+    const { name, phone } = this.orderForm.value;
+    const text = `📌 Нове замовлення:\n👤 Ім'я: ${name}\n📞 Телефон: ${phone}\n📩`;
 
     this.telegramService.sendMessage(text).subscribe(response => {
       console.log('Message sent:', response);
