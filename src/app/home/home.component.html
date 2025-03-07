@@ -1,400 +1,438 @@
 <!-- Preloader -->
 <div id="preloader">
-    <div id="status" class="la-ball-triangle-path">
-        <div></div>
-        <div></div>
-        <div></div>
-    </div>
+	<div id="status" class="la-ball-triangle-path">
+		<div></div>
+		<div></div>
+		<div></div>
+	</div>
 </div>
 <!--End of Preloader-->
 
 <div class="page-border" data-wow-duration="0.7s" data-wow-delay="0.2s">
-    <div class="top-border wow fadeInDown animated" style="visibility: visible; animation-name: fadeInDown;"></div>
-    <div class="right-border wow fadeInRight animated" style="visibility: visible; animation-name: fadeInRight;"></div>
-    <div class="bottom-border wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;"></div>
-    <div class="left-border wow fadeInLeft animated" style="visibility: visible; animation-name: fadeInLeft;"></div>
+	<div class="top-border wow fadeInDown animated" style="visibility: visible; animation-name: fadeInDown;"></div>
+	<div class="right-border wow fadeInRight animated" style="visibility: visible; animation-name: fadeInRight;"></div>
+	<div class="bottom-border wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;"></div>
+	<div class="left-border wow fadeInLeft animated" style="visibility: visible; animation-name: fadeInLeft;"></div>
 </div>
 
 <div id="wrapper">
 
-    <header id="banner" class="scrollto clearfix" data-enllax-ratio=".5">
-        <div id="header" class="nav-collapse">
-            <div class="row clearfix">
-                <div class="col-1">
-
-                    <!--Logo-->
-                    <div id="logo">
-
-                        <!--Logo that is shown on the banner-->
-                        <img src="assets/images/logo-4.png" id="banner-logo" alt="Landing Page"/>
-                        <!--End of Banner Logo-->
-
-                        <!--The Logo that is shown on the sticky Navigation Bar-->
-                        <img src="assets/images/logo-4.png" id="navigation-logo" alt="Landing Page"/>
-                        <!--End of Navigation Logo-->
-
-                    </div>
-                    <!--End of Logo-->
-
-                    <aside>
-
-                        <!--Social Icons in Header-->
-                        <ul class="social-icons">
-                            <li>
-                                <a target="_blank" title="Tiktok" href="https://www.tiktok.com/@lizaproreels">
-                                    <img src="assets/icons/tiktok.svg" width="32px" height="18px" alt="Tiktok link" class="tiktok">
-                                </a>
-                            </li>
-                            <li>
-                                <a target="_blank" title="Instagram" href="https://www.instagram.com/lizaproreels/">
-                                    <i class="fa fa-instagram fa-1x"></i><span>Instagram</span>
-                                </a>
-                            </li>
-                        </ul>
-                        <!--End of Social Icons in Header-->
-
-                    </aside>
-
-                    <!--Main Navigation-->
-                    <nav id="nav-main">
-                        <ul>
-                            <li>
-                                <a href="#banner">Головна</a>
-                            </li>
-                            <li>
-                                <a href="#about">Про курс</a>
-                            </li>
-                            <li>
-                                <a href="#gallery">Творчі Кейси</a>
-                            </li>
-                            <li>
-                                <a href="#services">Про Мене</a>
-                            </li>
-                            <li>
-                                <a href="#testimonials">Для кого</a>
-                            </li>
-                            <li>
-                                <a href="#clients">Інструменти</a>
-                            </li>
-                            <li>
-                                <a href="#pricing">Отримати Курс</a>
-                            </li>
-                        </ul>
-                    </nav>
-                    <!--End of Main Navigation-->
-
-                    <div id="nav-trigger"><span></span></div>
-                    <nav id="nav-mobile"></nav>
-
-                </div>
-            </div>
-        </div><!--End of Header-->
-
-        <!--Banner Content-->
-        <div id="banner-content" class="row clearfix">
-
-            <div class="col-38">
-
-                <div class="section-heading">
-                    <!-- <h1>A FREE AND SIMPLE LANDING PAGE</h1> -->
-                    <h1>Анімаційний монтаж без складнощів</h1>
-                    <h2>Перетворюйте свої відзняті матеріали в захоплюючі анімаційні відео!</h2>
-                </div>
-
-                <details class="invoice-details invoice-details--first">
-                    <summary class="button">Забронювати місце</summary>
-
-                    <div class="form__cover1">
-                        <form [formGroup]="orderForm" (ngSubmit)="submitForm()">
-                            <input type="text" formControlName="name" placeholder="Ваше ім'я" required>
-                            <input type="tel" formControlName="phone" placeholder="Номер телефону" required>
-                            <button type="submit" class="button">Надіслати запит</button>
-                        </form>
-                    </div>
-                 </details>
-
-            </div>
-
-        </div><!--End of Row-->
-    </header>
-
-    <!--Main Content Area-->
-    <main id="content">
-
-        <!--Introduction-->
-        <section id="about" class="introduction scrollto">
-
-            <div class="row clearfix">
-
-                <div class="col-3">
-                    <div class="section-heading">
-                        <h3>УСПІХ</h3>
-                        <h2 class="section-title">Що ви отримаєте на курсі?</h2>
-                        <p class="section-subtitle">Цей курс допоможе вам оволодіти навичками відеомонтажу та створення анімацій за 
-                            допомогою лише мобільного телефону.</p>
-                    </div>
-
-                </div>
-
-                <div class="col-2-3">
-
-                    <!--Icon Block-->
-                    <div class="col-2 icon-block icon-top wow fadeInUp" data-wow-delay="0.1s">
-                        <!--Icon-->
-                        <div class="icon">
-                            <i class="fa fa-video-camera fa-2x"></i>
-                        </div>
-                        <!--Icon Block Description-->
-                        <div class="icon-block-description">
-                            <h4>Якісний відеоконтент</h4>
-                            <p>Створюйте професійні відео та анімації для Instagram, Reels, TikTok та інших соцмереж без необхідності у дорогому обладнанні та камерах.</p>
-                        </div>
-                    </div>
-                    <!--End of Icon Block-->
-
-                    <!--Icon Block-->
-                    <div class="col-2 icon-block icon-top wow fadeInUp" data-wow-delay="0.3s">
-                        <!--Icon-->
-                        <div class="icon">
-                            <i class="fa fa-group fa-2x"></i>
-                        </div>
-                        <!--Icon Block Description-->
-                        <div class="icon-block-description">
-                            <h4>Збільшення аудиторії</h4>
-                            <p>Отримуйте більше підписників, лайків та переглядів завдяки креативному та ефектному відеоконтенту, який допоможе зацікавити вашу аудиторію та залучити нових клієнтів.</p>
-                        </div>
-                    </div>
-                    <!--End of Icon Block-->
-
-                    <!--Icon Block-->
-                    <div class="col-2 icon-block icon-top wow fadeInUp" data-wow-delay="0.5s">
-                        <!--Icon-->
-                        <div class="icon">
-                            <i class="fa fa-tablet fa-2x"></i>
-                        </div>
-                        <!--Icon Block Description-->
-                        <div class="icon-block-description">
-                            <h4>Монтаж анімацій на мобільному телефоні</h4>
-                            <p>Опануйте навички створення крутих анімаційних переходів і ефектів за допомогою лише мобільного телефону. Ви навчитесь робити відео, яке виділяється на фоні інших.</p>
-                        </div>
-                    </div>
-                    <!--End of Icon Block-->
-
-                    <!--Icon Block-->
-                    <div class="col-2 icon-block icon-top wow fadeInUp" data-wow-delay="0.5s">
-                        <!--Icon-->
-                        <div class="icon">
-                            <i class="fa fa-dollar fa-2x"></i>
-                        </div>
-                        <!--Icon Block Description-->
-                        <div class="icon-block-description">
-                            <h4>Заробляйте на відеомейкінгу</h4>
-                            <p>Підвищіть свої професійні навички та почніть заробляти більше, працюючи як відеомейкер-фрілансер.</p>
-                        </div>
-                    </div>
-                    <!--End of Icon Block-->
-
-                </div>
-
-            </div>
-
-
-        </section>
-        <!--End of Introduction-->
-
-
-        <!--Gallery-->
-        <aside id="gallery" class="row text-center scrollto clearfix" data-featherlight-gallery
-                 data-featherlight-filter="a">
-
-                <a href="assets/gifs/galery-1.gif" data-featherlight="image" class="col-3 wow fadeIn"
-                   data-wow-delay="0.1s"><img src="assets/gifs/galery-1.gif" alt="Landing Page" class="galery-gif"/></a>
-                <a href="assets/gifs/galery-2.gif" data-featherlight="image" class="col-3 wow fadeIn"
-                   data-wow-delay="0.3s"><img src="assets/gifs/galery-2.gif" alt="Landing Page" class="galery-gif"/></a>
-                <a href="assets/gifs/galery-3.gif" data-featherlight="image" class="col-3 wow fadeIn"
-                   data-wow-delay="0.5s"><img src="assets/gifs/galery-3.gif" alt="Landing Page" class="galery-gif"/></a>
-
-        </aside>
-        <!--End of Gallery-->
-
-
-        <!--Content Section-->
-        <div id="services" class="scrollto clearfix">
-
-            <div class="row no-padding-bottom clearfix">
-
-
-                <!--Content Left Side-->
-                <div class="col-3">
-                    <!--User Testimonial-->
-                    <blockquote class="testimonial text-right bigtest">
-                        <q>Неможливих речей немає. Є недостатня кількість спроб.</q>
-                        <footer>— Любко Дереш, письменник</footer>
-                    </blockquote>
-                    <!-- End of Testimonial-->
-
-                </div>
-                <!--End Content Left Side-->
-
-                <!--Content of the Right Side-->
-                <div class="col-3">
-                    <div class="section-heading">
-                        <h3>МОТИВАЦІЯ</h3>
-                        <h2 class="section-title">Шлях до майстерності</h2>
-                        <p class="section-subtitle">Привіт! Я Ліза – експертка з анімаційного монтажу відео.
-                            Мій шлях до відеомонтажу почався у 2016 році, коли я з сестрою почала знімати відео для YouTube. 
-                            З того моменту я зрозуміла, що створення візуального контенту – це моя пристрасть.
-                        </p>
-                    </div>
-                    <p>У 2021 році я зробила понад 500 професійних фотосесій, зберігаючи найкращі моменти для клієнтів. 
-                        Серед моїх робіт – співпраця з відомими українськими зірками, такими як SKYLERR і CHICO&QUATOSHI.
-                    </p>
-                    <p>
-                        Останній рік я працюю у престижній румунській фотостудії, і спеціалізуюся на монтажі відео для Reels. 
-                        Мої проєкти допомагають людям просувати свій бізнес і бренди, створюючи ефективний рекламний контент.
-                    </p>
-                    <p>На курсі я поділюся з тобою всіма знаннями та навичками, щоб ти міг працювати віддалено, 
-                        заробляти на відеомонтажі й досягати своїх професійних цілей. 
-                        Якщо ти прагнеш самостійності та впевненості в своїй справі, 
-                        цей курс стане твоїм першим кроком до успіху!</p>
-                    <!-- Just replace the Video ID "UYJ5IjBRlW8" with the ID of your video on YouTube (Found within the URL) -->
-                    <a href="#" data-videoid="gne6BxToffA" data-videosite="youtube" class="button video link-lightbox">
-                        ДИВИТИСЬ <i class="fa fa-play" aria-hidden="true"></i>
-                    </a>
-                </div>
-                <!--End Content Right Side-->
-
-                <div class="col-3">
-                    <img src="assets/images/about-me.png" alt="Dancer"/>
-                </div>
-
-            </div>
-
-
-        </div>
-        <!--End of Content Section-->
-
-        <!--Testimonials-->
-        <aside id="testimonials" class="scrollto text-center" data-enllax-ratio=".2">
-
-            <div class="row clearfix">
-
-                <div class="section-heading">
-                    <h3>КОРИСТЬ</h3>
-                    <h2 class="section-title">Для кого цей курс</h2>
-                </div>
-
-                <!--User Testimonial-->
-                <blockquote class="col-3 testimonial classic">
-                    <img src="assets/images/user-images/user-1.jpg" alt="User"/>
-                    <q>Почнете з нуля та зможете створювати ефектні відео без дорогого обладнання.</q>
-                    <footer>Новачків</footer>
-                </blockquote>
-                <!-- End of Testimonial-->
-
-                <!--User Testimonial-->
-                <blockquote class="col-3 testimonial classic">
-                    <img src="assets/images/user-images/user-2.jpg" alt="User"/>
-                    <q>Ви збільшите свою аудиторію, створюючи цікаві відео-контент, який підвищує охоплення.</q>
-                    <footer>Блогерів</footer>
-                </blockquote>
-                <!-- End of Testimonial-->
-
-                <!--User Testimonial-->
-                <blockquote class="col-3 testimonial classic">
-                    <img src="assets/images/user-images/user-3.jpg" alt="User"/>
-                    <q>Навчитеся монтувати трендові відео на телефон, щоб заробляти більше на замовленнях від клієнтів.</q>
-                    <footer>Контент-креаторів</footer>
-                </blockquote>
-                <!-- End of Testimonial-->
-
-            </div>
-
-        </aside>
-        <!--End of Testimonials-->
-
-        <!--Clients-->
-        <section id="clients" class="scrollto clearfix">
-            <div class="row custom-row">
-
-                <div class="col-2-3">
-
-                    <div class="section-heading">
-                        <h3>ТЕХНОЛОГІЇ</h3>
-                        <h2 class="section-title">Інструмент для Творців</h2>
-                        <p class="section-subtitle">Вам знадобиться програма <b>CapCut</b> для створення ефектного 
-                            анімаційного монтажу. <b>CapCut</b> дозволяє легко створювати унікальні 
-                            відео на телефоні, що привертатимуть увагу та залучатимуть нових клієнтів. 
-                            Простота використання та потужний функціонал CapCut робить його 
-                            ідеальним інструментом для цього курсу.</p>
-                    </div>
-
-                </div>
-
-                <div class="col-3 cusom-col">
-                    <a href="#">
-                        <img src="assets/icons/capcut.svg" alt="Capcut icon" class="capcut"/>
-                        <div class="client-overlay"><span>Capcut</span></div>
-                    </a>
-                </div>
-
-            </div>
-        </section>
-        <!--End of Clients-->
-
-        <!--Pricing Tables-->
-        <section id="pricing" class="secondary-color text-center scrollto clearfix ">
-            <div class="row clearfix">
-
-                <div class="section-heading">
-                    <h3>СТАРТ</h3>
-                    <h2 class="section-title">Отримати курс</h2>
-                </div>
-
-                <!--Pricing Block-->
-                <div class="pricing-block wow fadeInUp" data-wow-delay="0.4s">
-                    <div class="pricing-block-content">
-                        <h3>Курс "Монтаж Анімаційних Відео"</h3>
-                        <p></p>
-                        <div class="pricing">
-                            <div class="price"><span>&#8372;</span>299</div>
-                        </div>
-                        <ul>
-                            <li>3 Відео уроків</li>
-                            <li>3 Анімаційних відео в результаті навчання</li>
-                            <li>2 Подарунки від мене</li>
-                            <li>Чат підтримки</li>
-                            <li>Постійний доступ до матеріалів курсу</li>
-                        </ul>
-                        <details class="invoice-details">
-                            <summary class="button book-seat">Забронювати місце</summary>
-                            <div class="form__cover">
-                                <form [formGroup]="orderForm" (ngSubmit)="submitForm()">
-                                    <input type="text" formControlName="name" placeholder="Ваше ім'я" required>
-                                    <input type="tel" formControlName="phone" placeholder="Номер телефону" required>
-                                    <button type="submit" class="button">Надіслати запит</button>
-                                </form>
-                            </div>
-                        </details>
-                    </div>
-                </div>
-                <!--End Pricing Block-->                
-
-            </div>
-        </section>
-        <!--End of Pricing Tables-->
-
-    </main>
-    <!--End Main Content Area-->
-
-
-    <!--Footer-->
-    <footer id="landing-footer" class="clearfix">
-        <div class="row clearfix">
-
-            <p id="copyright" class="col-2">Made with love by <a target="_blank" href="https://www.linkedin.com/in/marharyta-andriukhina/">Voloshka</a></p>
-        </div>
-    </footer>
-    <!--End of Footer-->
+	<header id="banner" class="scrollto clearfix" data-enllax-ratio=".5">
+		<div id="header" class="nav-collapse">
+			<div class="row clearfix">
+				<div class="col-1">
+
+					<!--Logo-->
+					<div id="logo">
+
+						<!--Logo that is shown on the banner-->
+						<img src="assets/images/logo-4.png" id="banner-logo" alt="Landing Page"/>
+						<!--End of Banner Logo-->
+
+						<!--The Logo that is shown on the sticky Navigation Bar-->
+						<img src="assets/images/logo-4.png" id="navigation-logo" alt="Landing Page"/>
+						<!--End of Navigation Logo-->
+
+					</div>
+					<!--End of Logo-->
+
+					<aside>
+
+						<!--Social Icons in Header-->
+						<ul class="social-icons">
+							<li>
+								<a target="_blank" title="Tiktok" href="https://www.tiktok.com/@lizaproreels">
+									<img src="assets/icons/tiktok.svg" width="32px" height="18px" alt="Tiktok link" class="tiktok">
+								</a>
+							</li>
+							<li>
+								<a target="_blank" title="Instagram" href="https://www.instagram.com/lizaproreels/">
+									<i class="fa fa-instagram fa-1x"></i><span>Instagram</span>
+								</a>
+							</li>
+						</ul>
+						<!--End of Social Icons in Header-->
+
+					</aside>
+
+					<!--Main Navigation-->
+					<nav id="nav-main">
+						<ul>
+							<li>
+								<a href="#banner">Головна</a>
+							</li>
+							<li>
+								<a href="#about">Про курс</a>
+							</li>
+							<li>
+								<a href="#gallery">Творчі Кейси</a>
+							</li>
+							<li>
+								<a href="#services">Про Мене</a>
+							</li>
+							<li>
+								<a href="#testimonials">Для кого</a>
+							</li>
+							<li>
+								<a href="#clients">Інструменти</a>
+							</li>
+							<li>
+								<a href="#pricing">Отримати Курс</a>
+							</li>
+						</ul>
+					</nav>
+					<!--End of Main Navigation-->
+
+					<div id="nav-trigger"><span></span></div>
+					<nav id="nav-mobile"></nav>
+
+				</div>
+			</div>
+		</div><!--End of Header-->
+
+		<!--Banner Content-->
+		<div id="banner-content" class="row clearfix">
+
+			<div class="col-38">
+
+				<div class="section-heading">
+					<!-- <h1>A FREE AND SIMPLE LANDING PAGE</h1> -->
+					<h1>Анімаційний монтаж без складнощів</h1>
+					<h2>Перетворюйте свої відзняті матеріали в захоплюючі анімаційні відео!</h2>
+				</div>
+
+				<details class="invoice-details invoice-details--first">
+					<summary class="button">Забронювати місце</summary>
+
+					<div class="form__cover1">
+						<form [formGroup]="orderFormMain" (ngSubmit)="submitForm()">
+							<input
+								type="text"
+								formControlName="name"
+								placeholder="Ваше ім'я"
+								[ngClass]="{'invalid': orderFormMain.get('name')?.invalid && orderFormMain.get('name')?.touched}"
+							>
+							<div *ngIf="orderFormMain.get('name')?.invalid && orderFormMain.get('name')?.touched" class="error">
+								Ім'я є обов'язковим
+							</div>
+				
+							<input
+								type="tel"
+								formControlName="phone"
+								prefix="+38 "
+								mask="+00 (000) 0000 000"
+								placeholder="+38 (***) **** ***"
+								[ngClass]="{'invalid': orderFormMain.get('phone')?.invalid && orderFormMain.get('phone')?.touched}"
+							>
+							<div *ngIf="orderFormMain.get('phone')?.invalid && orderFormMain.get('phone')?.touched" class="error">
+								Введіть коректний номер телефону
+							</div>
+				
+							<button type="submit" class="button" [disabled]="orderFormMain.invalid">Надіслати запит</button>
+						</form>
+					</div>
+				</details>
+
+			</div>
+
+		</div><!--End of Row-->
+  </header>
+
+	<!--Main Content Area-->
+	<main id="content">
+
+		<!--Introduction-->
+		<section id="about" class="introduction scrollto">
+
+			<div class="row clearfix">
+
+				<div class="col-3">
+					<div class="section-heading">
+						<h3>УСПІХ</h3>
+						<h2 class="section-title">Що ви отримаєте на курсі?</h2>
+						<p class="section-subtitle">Цей курс допоможе вам оволодіти навичками відеомонтажу та створення анімацій за 
+							допомогою лише мобільного телефону.</p>
+					</div>
+
+				</div>
+
+				<div class="col-2-3">
+
+					<!--Icon Block-->
+					<div class="col-2 icon-block icon-top wow fadeInUp" data-wow-delay="0.1s">
+						<!--Icon-->
+						<div class="icon">
+							<i class="fa fa-video-camera fa-2x"></i>
+						</div>
+						<!--Icon Block Description-->
+						<div class="icon-block-description">
+							<h4>Якісний відеоконтент</h4>
+							<p>Створюйте професійні відео та анімації для Instagram, Reels, TikTok та інших соцмереж без необхідності у дорогому обладнанні та камерах.</p>
+						</div>
+					</div>
+					<!--End of Icon Block-->
+
+					<!--Icon Block-->
+					<div class="col-2 icon-block icon-top wow fadeInUp" data-wow-delay="0.3s">
+						<!--Icon-->
+						<div class="icon">
+							<i class="fa fa-group fa-2x"></i>
+						</div>
+						<!--Icon Block Description-->
+						<div class="icon-block-description">
+							<h4>Збільшення аудиторії</h4>
+							<p>Отримуйте більше підписників, лайків та переглядів завдяки креативному та ефектному відеоконтенту, який допоможе зацікавити вашу аудиторію та залучити нових клієнтів.</p>
+						</div>
+					</div>
+					<!--End of Icon Block-->
+
+					<!--Icon Block-->
+					<div class="col-2 icon-block icon-top wow fadeInUp" data-wow-delay="0.5s">
+						<!--Icon-->
+						<div class="icon">
+							<i class="fa fa-tablet fa-2x"></i>
+						</div>
+						<!--Icon Block Description-->
+						<div class="icon-block-description">
+							<h4>Монтаж анімацій на мобільному телефоні</h4>
+							<p>Опануйте навички створення крутих анімаційних переходів і ефектів за допомогою лише мобільного телефону. Ви навчитесь робити відео, яке виділяється на фоні інших.</p>
+						</div>
+					</div>
+					<!--End of Icon Block-->
+
+					<!--Icon Block-->
+					<div class="col-2 icon-block icon-top wow fadeInUp" data-wow-delay="0.5s">
+						<!--Icon-->
+						<div class="icon">
+							<i class="fa fa-dollar fa-2x"></i>
+						</div>
+						<!--Icon Block Description-->
+						<div class="icon-block-description">
+							<h4>Заробляйте на відеомейкінгу</h4>
+							<p>Підвищіть свої професійні навички та почніть заробляти більше, працюючи як відеомейкер-фрілансер.</p>
+						</div>
+					</div>
+					<!--End of Icon Block-->
+
+				</div>
+
+			</div>
+
+
+		</section>
+		<!--End of Introduction-->
+
+
+		<!--Gallery-->
+		<aside id="gallery" class="row text-center scrollto clearfix" data-featherlight-gallery
+			data-featherlight-filter="a">
+
+			<a href="lisa-course/assets/gifs/galery-1.gif" data-featherlight="image" class="col-3 wow fadeIn"
+				data-wow-delay="0.1s"><img src="assets/gifs/galery-1.gif" alt="Landing Page" class="galery-gif"/></a>
+			<a href="lisa-course/assets/gifs/galery-2.gif" data-featherlight="image" class="col-3 wow fadeIn"
+				data-wow-delay="0.3s"><img src="assets/gifs/galery-2.gif" alt="Landing Page" class="galery-gif"/></a>
+			<a href="lisa-course/assets/gifs/galery-3.gif" data-featherlight="image" class="col-3 wow fadeIn"
+				data-wow-delay="0.5s"><img src="assets/gifs/galery-3.gif" alt="Landing Page" class="galery-gif"/></a>
+
+		</aside>
+		<!--End of Gallery-->
+
+		<!--Content Section-->
+		<div id="services" class="scrollto clearfix">
+
+			<div class="row no-padding-bottom clearfix">
+
+				<!--Content Left Side-->
+				<div class="col-3">
+					<!--User Testimonial-->
+					<blockquote class="testimonial text-right bigtest">
+						<q>Неможливих речей немає. Є недостатня кількість спроб.</q>
+						<footer>— Любко Дереш, письменник</footer>
+					</blockquote>
+					<!-- End of Testimonial-->
+
+				</div>
+				<!--End Content Left Side-->
+
+				<!--Content of the Right Side-->
+				<div class="col-3">
+					<div class="section-heading">
+						<h3>МОТИВАЦІЯ</h3>
+						<h2 class="section-title">Шлях до майстерності</h2>
+						<p class="section-subtitle">Привіт! Я Ліза – експертка з анімаційного монтажу відео.
+							Мій шлях до відеомонтажу почався у 2016 році, коли я з сестрою почала знімати відео для YouTube. 
+							З того моменту я зрозуміла, що створення візуального контенту – це моя пристрасть.
+						</p>
+					</div>
+					<p>У 2021 році я зробила понад 500 професійних фотосесій, зберігаючи найкращі моменти для клієнтів. 
+						Серед моїх робіт – співпраця з відомими українськими зірками, такими як SKYLERR і CHICO&QUATOSHI.
+					</p>
+					<p>
+						Останній рік я працюю у престижній румунській фотостудії, і спеціалізуюся на монтажі відео для Reels. 
+						Мої проєкти допомагають людям просувати свій бізнес і бренди, створюючи ефективний рекламний контент.
+					</p>
+					<p>На курсі я поділюся з тобою всіма знаннями та навичками, щоб ти міг працювати віддалено, 
+						заробляти на відеомонтажі й досягати своїх професійних цілей. 
+						Якщо ти прагнеш самостійності та впевненості в своїй справі, 
+						цей курс стане твоїм першим кроком до успіху!</p>
+					<!-- Just replace the Video ID "UYJ5IjBRlW8" with the ID of your video on YouTube (Found within the URL) -->
+					<a href="#" data-videoid="gne6BxToffA" data-videosite="youtube" class="button video link-lightbox">
+						ДИВИТИСЬ <i class="fa fa-play" aria-hidden="true"></i>
+					</a>
+				</div>
+				<!--End Content Right Side-->
+
+				<div class="col-3">
+					<img src="assets/images/about-me.png" alt="Dancer"/>
+				</div>
+
+			</div>
+
+
+		</div>
+		<!--End of Content Section-->
+
+		<!--Testimonials-->
+		<aside id="testimonials" class="scrollto text-center" data-enllax-ratio=".2">
+
+			<div class="row clearfix">
+
+				<div class="section-heading">
+					<h3>КОРИСТЬ</h3>
+					<h2 class="section-title">Для кого цей курс</h2>
+				</div>
+
+				<!--User Testimonial-->
+				<blockquote class="col-3 testimonial classic">
+					<img src="assets/images/user-images/user-1.jpg" alt="User"/>
+					<q>Почнете з нуля та зможете створювати ефектні відео без дорогого обладнання.</q>
+					<footer>Новачків</footer>
+				</blockquote>
+				<!-- End of Testimonial-->
+
+				<!--User Testimonial-->
+				<blockquote class="col-3 testimonial classic">
+					<img src="assets/images/user-images/user-2.jpg" alt="User"/>
+					<q>Ви збільшите свою аудиторію, створюючи цікаві відео-контент, який підвищує охоплення.</q>
+					<footer>Блогерів</footer>
+				</blockquote>
+				<!-- End of Testimonial-->
+
+				<!--User Testimonial-->
+				<blockquote class="col-3 testimonial classic">
+					<img src="assets/images/user-images/user-3.jpg" alt="User"/>
+					<q>Навчитеся монтувати трендові відео на телефон, щоб заробляти більше на замовленнях від клієнтів.</q>
+					<footer>Контент-креаторів</footer>
+				</blockquote>
+				<!-- End of Testimonial-->
+
+			</div>
+
+		</aside>
+		<!--End of Testimonials-->
+
+		<!--Clients-->
+		<section id="clients" class="scrollto clearfix">
+			<div class="row custom-row">
+
+				<div class="col-2-3">
+
+					<div class="section-heading">
+						<h3>ТЕХНОЛОГІЇ</h3>
+						<h2 class="section-title">Інструмент для Творців</h2>
+						<p class="section-subtitle">Вам знадобиться програма <b>CapCut</b> для створення ефектного 
+							анімаційного монтажу. <b>CapCut</b> дозволяє легко створювати унікальні 
+							відео на телефоні, що привертатимуть увагу та залучатимуть нових клієнтів. 
+							Простота використання та потужний функціонал CapCut робить його 
+							ідеальним інструментом для цього курсу.</p>
+					</div>
+
+				</div>
+
+				<div class="col-3 cusom-col">
+					<a href="#">
+						<img src="assets/icons/capcut.svg" alt="Capcut icon" class="capcut"/>
+						<div class="client-overlay"><span>Capcut</span></div>
+					</a>
+				</div>
+
+			</div>
+		</section>
+		<!--End of Clients-->
+
+		<!--Pricing Tables-->
+		<section id="pricing" class="secondary-color text-center scrollto clearfix ">
+			<div class="row clearfix">
+
+				<div class="section-heading">
+					<h3>СТАРТ</h3>
+					<h2 class="section-title">Отримати курс</h2>
+				</div>
+
+				<!--Pricing Block-->
+				<div class="pricing-block wow fadeInUp" data-wow-delay="0.4s">
+					<div class="pricing-block-content">
+						<h3>Курс "Монтаж Анімаційних Відео"</h3>
+						<p></p>
+						<div class="pricing">
+							<div class="price"><span>&#8372;</span>299</div>
+						</div>
+						<ul>
+							<li>3 Відео уроків</li>
+							<li>3 Анімаційних відео в результаті навчання</li>
+							<li>2 Подарунки від мене</li>
+							<li>Чат підтримки</li>
+							<li>Постійний доступ до матеріалів курсу</li>
+						</ul>
+						<details class="invoice-details">
+							<summary class="button book-seat">Забронювати місце</summary>
+							<div class="form__cover">
+								<form [formGroup]="orderForm" (ngSubmit)="submitFormMain()">
+									<input
+										type="text"
+										formControlName="name"
+										placeholder="Ваше ім'я"
+										[ngClass]="{'invalid': orderForm.get('name')?.invalid && orderForm.get('name')?.touched}"
+									>
+									<div *ngIf="orderForm.get('name')?.invalid && orderForm.get('name')?.touched" class="error">
+										Ім'я є обов'язковим
+									</div>
+						
+									<input
+										type="tel"
+										formControlName="phone"
+										prefix="+38 "
+										mask="+00 (000) 0000 000"
+										placeholder="+38 (***) **** ***"
+										[ngClass]="{'invalid': orderForm.get('phone')?.invalid && orderForm.get('phone')?.touched}"
+									>
+									<div *ngIf="orderForm.get('phone')?.invalid && orderForm.get('phone')?.touched" class="error">
+										Введіть коректний номер телефону
+									</div>
+						
+									<button type="submit" class="button" [disabled]="orderForm.invalid">Надіслати запит</button>
+								</form>
+							</div>
+						</details>
+					</div>
+				</div>
+				<!--End Pricing Block-->                
+
+			</div>
+		</section>
+		<!--End of Pricing Tables-->
+
+	</main>
+	<!--End Main Content Area-->
+
+
+	<!--Footer-->
+	<footer id="landing-footer" class="clearfix">
+		<div class="row clearfix">
+
+			<p id="copyright" class="col-2">Made with love by <a target="_blank" href="https://www.linkedin.com/in/marharyta-andriukhina/">Voloshka</a></p>
+		</div>
+	</footer>
+	<!--End of Footer-->
 
 </div>

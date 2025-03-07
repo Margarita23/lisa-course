@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { ConfigService } from './config.service';
+import { environment } from './../../environments/environment';
 
 @Injectable({
   providedIn: 'root'
@@ -10,12 +10,11 @@ export class TelegramService {
   private chatId: string;
   private apiUrl: string;
 
-  constructor(private http: HttpClient, private configService: ConfigService) {
-    this.botToken = this.configService.get('GRAM');
-    this.chatId = this.configService.get('CHAT');
+  constructor(private http: HttpClient) {
+    this.botToken = environment.GRAM;
+    this.chatId = environment.CHAT;
     this.apiUrl = `https://api.telegram.org/bot${this.botToken}/sendMessage`;
   }
-
 
   sendMessage(message: string) {
     return this.http.post(this.apiUrl, {
